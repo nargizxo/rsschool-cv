@@ -7,6 +7,5 @@
 - Work experience: none;
 - Desire to learn: a lot lol;
 - Education: HTML Academy courses (not finished); 
-- English Language: C1
-
+- English Language: C1 (advanced)
 
