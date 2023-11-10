@@ -6,31 +6,54 @@ body {
 }
 
 .block {
-	width: 25vw;
-	height: 25vw;
-	background-color: #B29D8B;
+	background-color: #ddbeab;
 	color: #fff;
 	padding: 1rem; 
 }
 
 .left {
+	width: 20vw;
+	height: 60vw;
 	float: left; 
 	margin-right: 1rem;
 }
 
 .right {
-	float: right; 
-	margin-left: 1rem;
-} 
+	width: 70vw;
+	height: 10vw;
+	float: center; 
+	margin-right: 1rem;
+}
 
 section {
 	background-color: #FAF0E6; 
-	border: 1px solid #333; 
+	border: 1px solid #FFFFFF; 
 	padding: 1rem;
 	display: flow-root; 
 }
 
-/* p {
-	margin-left: 10px; 
-} */
+.unit {
+	text-decoration: underline #1e0403;
+	position: relative;
+	color: #111111; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+
+ unit:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+unit:hover:after,
+unit:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+} 
 
